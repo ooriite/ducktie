@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'time_blocks_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -28,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: IndexedStack(
         index: _currentIndex,
         children: [
-          PlaceholderPage(title: 'Timeblocks'),
+          TimeBlocksPage(),
           PlaceholderPage(title: 'Tasks'),
           PlaceholderPage(title: 'Expenses'),
           SettingsPage(),
